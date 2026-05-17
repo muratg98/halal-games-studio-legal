@@ -76,6 +76,40 @@
       transition: background 0.15s ease;
     }
     .links a:hover { background: var(--gold-soft); }
+    .downloads {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 32px 0 16px;
+    }
+    .download {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+      padding: 12px 20px;
+      border-radius: 12px;
+      background: var(--cream);
+      color: var(--ink);
+      text-decoration: none;
+      min-width: 180px;
+      transition: transform 0.15s ease, background 0.15s ease;
+      border: 2px solid var(--ink);
+    }
+    .download:hover {
+      transform: translateY(-2px);
+      background: var(--gold);
+    }
+    .download-eyebrow {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      opacity: 0.7;
+    }
+    .download-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
     footer {
       margin-top: 64px;
       padding-top: 32px;
@@ -91,6 +125,17 @@
     <p class="arabic">بِسْمِ اللهِ</p>
     <h1>Halal Games</h1>
     <p class="lede">Five halal party games for Muslim families and friends. Pass the phone, race the letter, guess the word. No music, no ads, no tracking.</p>
+
+    <div class="downloads">
+      <a class="download download-ios" href="https://apps.apple.com/app/id6765871994">
+        <span class="download-eyebrow">Download on the</span>
+        <span class="download-name">App Store</span>
+      </a>
+      <a class="download download-android" href="https://play.google.com/store/apps/details?id=com.halalgamesstudio.app">
+        <span class="download-eyebrow">Get it on</span>
+        <span class="download-name">Google Play</span>
+      </a>
+    </div>
 
     <h2>The games</h2>
     <ul>
